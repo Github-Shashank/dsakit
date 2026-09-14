@@ -105,3 +105,27 @@ std::ostream& operator<<(std::ostream& out, const dsa::LinkedList<T>& self)
     self.iterate(out);
     return out;
 }
+
+
+template <typename T>
+T& dsa::LinkedList<T>::front()
+{
+    if (empty())
+    {
+        throw std::out_of_range("LinkedList::front(): list is empty");
+    }
+
+    return head_->data;
+}
+
+
+template <typename T>
+const T& dsa::LinkedList<T>::front() const
+{
+    if (empty())
+    {
+        throw std::out_of_range("LinkedList::front(): list is empty");
+    }
+
+    return head_->data;
+}

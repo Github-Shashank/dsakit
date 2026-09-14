@@ -40,6 +40,10 @@ class LinkedList
     void push_front(const T&);
     void push_back(const T&);
 
+    // Access
+    T& front();
+    const T& front() const;
+
     // Utility
     void clear();
 
