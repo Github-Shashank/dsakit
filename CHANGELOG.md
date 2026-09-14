@@ -14,6 +14,8 @@ All notable changes to DSAkit will be documented in this file.
 - Added `clear()` operation.
 - Added `front()` operation with const-correct overloads.
 - Added empty-list validation for `front()`.
+- Added `back()` operation with mutable and const overloads.
+- Added empty-list validation for `back()`.
 
 ### Internal
 

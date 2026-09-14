@@ -43,6 +43,8 @@ class LinkedList
     // Access
     T& front();
     const T& front() const;
+    T& back();
+    const T& back() const;
 
     // Utility
     void clear();

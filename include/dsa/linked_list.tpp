@@ -129,3 +129,27 @@ const T& dsa::LinkedList<T>::front() const
 
     return head_->data;
 }
+
+
+template <typename T>
+T& dsa::LinkedList<T>::back()
+{
+    if (empty())
+    {
+        throw std::out_of_range("LinkedList::back(): list is empty");
+    }
+
+    return tail_->data;
+}
+
+
+template <typename T>
+const T& dsa::LinkedList<T>::back() const
+{
+    if (empty())
+    {
+        throw std::out_of_range("LinkedList::back(): list is empty");
+    }
+
+    return tail_->data;
+}
