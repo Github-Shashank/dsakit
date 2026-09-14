@@ -173,3 +173,37 @@ void dsa::LinkedList<T>::pop_front()
         tail_ = nullptr;
     }
 }
+
+template <typename T>
+void dsa::LinkedList<T>::pop_back()
+{
+    if(empty())
+    {
+        throw std::out_of_range("LinkedList::pop_back(): list is empty");
+    }
+
+    if (head_ == tail_)
+    {
+        delete head_;
+        
+        tail_ = nullptr;
+        head_ = nullptr;
+        --size_;
+        
+        return;
+    }
+    
+    Node* temp = head_;
+
+    while (temp->next != tail_)
+    {
+        temp = temp->next;
+    }
+
+    delete tail_;
+    
+    tail_ = temp;
+    tail_->next = nullptr;
+
+    --size_;
+}

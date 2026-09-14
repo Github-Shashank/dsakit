@@ -48,6 +48,7 @@ class LinkedList
 
     // Removal
     void pop_front();
+    void pop_back();
 
     // Utility
     void clear();
