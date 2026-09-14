@@ -22,6 +22,7 @@ DSAkit currently includes a singly linked list with support for:
 * Checking the size
 * Checking whether the list is empty
 * Clearing the list
+* Pop front of the list
 
 More operations and data structures will be added as development continues.
 

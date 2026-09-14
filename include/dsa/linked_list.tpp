@@ -153,3 +153,23 @@ const T& dsa::LinkedList<T>::back() const
 
     return tail_->data;
 }
+
+template <typename T>
+void dsa::LinkedList<T>::pop_front()
+{
+    if (empty())
+    {
+        throw std::out_of_range("LinkedList::pop_front(): list is empty");
+    }
+
+    Node* old_head = head_;
+    head_ = head_->next;
+    delete old_head;
+
+    --size_;
+
+    if (head_ == nullptr)
+    {
+        tail_ = nullptr;
+    }
+}

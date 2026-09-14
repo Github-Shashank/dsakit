@@ -46,6 +46,9 @@ class LinkedList
     T& back();
     const T& back() const;
 
+    // Removal
+    void pop_front();
+
     // Utility
     void clear();
 
