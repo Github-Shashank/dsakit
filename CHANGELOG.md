@@ -20,6 +20,7 @@ All notable changes to DSAkit will be documented in this file.
 - Added empty-list validation for `pop_front()`.
 - Added `pop_back()` operation.
 - Added empty-list and single-element handling for `pop_back()`.
+- Added `deep_copy()` for creating an independent copy of a linked list.
 
 ### Internal
 

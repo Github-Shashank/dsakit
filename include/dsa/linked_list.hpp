@@ -53,6 +53,9 @@ class LinkedList
     // Utility
     void clear();
 
+    // Deep Copy
+    LinkedList<T> deep_copy(const LinkedList&);
+
     void iterate(std::ostream& = std::cout) const;
 
 };

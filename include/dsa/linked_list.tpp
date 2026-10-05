@@ -207,3 +207,19 @@ void dsa::LinkedList<T>::pop_back()
 
     --size_;
 }
+
+
+template <typename T>
+dsa::LinkedList<T> dsa::LinkedList<T>::deep_copy(const dsa::LinkedList<T>& other)
+{
+    LinkedList<T> list;
+    const Node* temp = other.head_;
+
+    while (temp)
+    {
+        list.push_back(temp->data);
+        temp = temp->next;
+    }
+
+    return list;
+}
