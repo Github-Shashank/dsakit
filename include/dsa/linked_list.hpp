@@ -50,6 +50,9 @@ class LinkedList
     void pop_front();
     void pop_back();
 
+    // Reverse
+    // void reverse();
+
     // Utility
     void clear();
 

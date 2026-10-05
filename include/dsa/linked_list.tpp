@@ -209,6 +209,13 @@ void dsa::LinkedList<T>::pop_back()
 }
 
 
+// template <typename T>
+// void dsa::LinkedList<T>::reverse(void)
+// {
+
+// }
+
+
 template <typename T>
 dsa::LinkedList<T> dsa::LinkedList<T>::deep_copy(const dsa::LinkedList<T>& other)
 {
